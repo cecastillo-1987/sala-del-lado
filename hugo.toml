@@ -11,12 +11,12 @@ title = "La sala del lado"
 author = "La sala del lado"
 description = "Blog de escrituras cinefilas."
 profilePicture = "images/ruiz.jpeg"
-favicon = "images/favicons/favicon.ico"
+favicon = "favicons/favicon.ico"
 mainSections = ["post"]
 contentratio = 0.7
 enableEmoji = true
-disableThemeSwitcher = true
-hidesidebar = true
+disableThemeSwitcher = false
+hidesidebar = false
 reversepagetitle = true
 disableTitleCapitalization = true
 disableArchiveTitleStyling  = true
@@ -42,14 +42,14 @@ url = "https://instagram.com/tu-usuario"
   url = "/"
 
   [[menu.main]]
-  name = "entradas"
-  weight = 200
+  name = "Entradas"
+  weight = 250
   identifier = "posts"
   url = "/post/"
 
   [[menu.main]]
   name = "Colabora"
-  weight = 300
+  weight = 800
   identifier = "about"
   url = "/about/"
 

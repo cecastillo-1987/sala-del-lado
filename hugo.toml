@@ -2,9 +2,38 @@ baseURL = "https://cecastillo-1987.github.io/sala-del-lado/"
 languageCode = "es"
 title = "Sala del Lado"
 theme = "anatole"
+summarylength = 20
 publishDir = "docs"
+
 [params]
-title = "Sala del Lado"
-author = "Tu Nombre"
-description = "Un blog minimalista sobre [tu temática]"
-profilePicture = "images/profile.jpg"
+title = "Sala del lado"
+author = "Sala del lado"
+description = "Blog de escrituras cinefilas."
+profilePicture = "images/ruiz.jpeg"
+favicon = "images/favicons/favicon.ico"
+mainSections = ["post"]
+contentratio = 0.6
+enableEmoji = true
+
+
+[menu]
+  [[menu.main]]
+  name = "Inicio"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "entradas"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "Acerca"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+
+  copyright = "2025-{{ YEAR }}"

@@ -154,3 +154,43 @@ a:hover,
         background-color: #E3F2E4 !important;
     }
 }
+
+/* --- Botón de cambio de tema --- */
+.themeswitch {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.themeswitch a, .themeswitch i {
+    color: #244023 !important;         /* Color para modo claro */
+    background: #EEF3ED !important;    /* Fondo para modo claro, si quieres */
+    border: none !important;
+    cursor: pointer !important;
+}
+
+/* Colores para modo oscuro */
+.theme--dark .themeswitch a, .theme--dark .themeswitch i {
+    color: #EEF3ED !important;
+    background: #244023 !important;
+}
+
+/* --- Menú hamburguesa --- */
+.theme--light .navbar-burger {
+    background-color: #EEF3ED !important;
+}
+.theme--dark .navbar-burger {
+    background-color: #244023 !important;
+}
+.header .navbar-burger {
+    background-color: #EEF3ED !important;
+}
+.theme--dark .header .navbar-burger {
+    background-color: #244023 !important;
+}
+.navbar-burger__line {
+    background-color: #244023 !important; /* Líneas en modo claro */
+}
+.theme--dark .navbar-burger__line {
+    background-color: #EEF3ED !important; /* Líneas en modo oscuro */
+}

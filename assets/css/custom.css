@@ -113,3 +113,44 @@ a:hover,
 .theme--dark .nav__list-item a {
     color: #E3F2E4 !important;
 }
+
+/* Ajuste de color para el botón hamburguesa (forzado) */
+.theme--light .navbar-burger .navbar-burger__line {
+    background-color: #202620 !important;
+}
+.theme--dark .navbar-burger .navbar-burger__line {
+    background-color: #E3F2E4 !important;
+}
+
+/* Forzar color de hamburguesa en todas las condiciones (zoom y animaciones) */
+.navbar-burger__line {
+    background-color: #202620 !important;
+}
+@media all and (min-resolution: 0.001dpcm) {
+    .theme--light .navbar-burger__line {
+        background-color: #202620 !important;
+    }
+    .theme--dark .navbar-burger__line {
+        background-color: #E3F2E4 !important;
+    }
+}
+
+/* Desactivar animaciones de transición de página */
+.nav,
+.body {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Nueva regla para mayor especificidad */
+.header .navbar-burger .navbar-burger__line {
+    background-color: #202620 !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .theme--light .header .navbar-burger .navbar-burger__line {
+        background-color: #202620 !important;
+    }
+    .theme--dark .header .navbar-burger .navbar-burger__line {
+        background-color: #E3F2E4 !important;
+    }
+}

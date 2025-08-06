@@ -1,0 +1,10 @@
+baseURL = "https://cecastillo-1987.github.io/sala-del-lado/"
+languageCode = "es"
+title = "Sala del Lado"
+theme = "anatole"
+publishDir = "docs"
+[params]
+title = "Sala del Lado"
+author = "Tu Nombre"
+description = "Un blog minimalista sobre [tu temática]"
+profilePicture = "images/profile.jpg"

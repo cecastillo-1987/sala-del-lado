@@ -41,11 +41,75 @@ body {
 
 /* Reducir tamaño de íconos sociales en la barra lateral */
 .sidebar__list-item a i {
-    font-size: 20px !important; /* Reducido de 30px a 20px para probar */
-    /* Eliminamos width y height para evitar distorsiones */
+    font-size: 20px !important;
 }
 
-/* Opcional: Ajuste específico para Instagram */
+/* Ajuste específico para Instagram */
 .sidebar__list-item a i.fa-instagram {
-    font-size: 18px !important; /* Opcional, ajusta según prefieras */
+    font-size: 18px !important;
+}
+
+/* ------------------------------------------- */
+/* --- 3. Ajustes de Colores --- */
+/* ------------------------------------------- */
+
+/* Fondo del cuerpo */
+.theme--light .body {
+    background-color: #EEF3ED !important;
+    color: #202620 !important;
+}
+.theme--dark .body {
+    background-color: #244023 !important;
+    color: #E3F2E4 !important;
+}
+
+/* Fondos de elementos secundarios */
+.theme--light .nav__list,
+.theme--light .post,
+.theme--light .sidebar {
+    background-color: #EEF3ED !important;
+}
+.theme--dark .nav__list,
+.theme--dark .post,
+.theme--dark .sidebar {
+    background-color: #244023 !important;
+}
+
+/* Bordes y separadores */
+.theme--light .nav__link--active,
+.theme--light .post__footer {
+    border-bottom-color: #eee !important;
+}
+.theme--dark .nav__link--active,
+.theme--dark .post__footer {
+    border-bottom-color: #464646 !important;
+}
+
+/* Enlaces y acentos */
+a:hover,
+.category,
+.tag {
+    color: #BCBF54 !important;
+}
+
+/* Elementos destacados (alertas, botones) */
+.alert,
+.portfolio__button {
+    border-color: #395873 !important;
+}
+.theme--light .alert__indicator,
+.theme--dark .alert__indicator {
+    background-color: #395873 !important;
+}
+
+/* Corrección de color de texto para título del blog y menú */
+.theme--light .sidebar__introduction-title a,
+.theme--light .sidebar__introduction-title h1,
+.theme--light .nav__list-item a {
+    color: #202620 !important;
+}
+.theme--dark .sidebar__introduction-title a,
+.theme--dark .sidebar__introduction-title h1,
+.theme--dark .nav__list-item a {
+    color: #E3F2E4 !important;
 }

@@ -24,6 +24,7 @@ disableArchiveTitleStyling  = true
 localizedDates = true
 singleDateFormat = "2 de Enero de 2006"
 indexDateFormat = "2 de Enero de 2006"
+doNotLoadAnimations = true
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"

@@ -6,15 +6,33 @@ summarylength = 20
 publishDir = "docs"
 
 [params]
-title = "Sala del lado"
-author = "Sala del lado"
+customCss = ["css/custom.css"]
+title = "La sala del lado"
+author = "La sala del lado"
 description = "Blog de escrituras cinefilas."
 profilePicture = "images/ruiz.jpeg"
 favicon = "images/favicons/favicon.ico"
 mainSections = ["post"]
-contentratio = 0.6
+contentratio = 0.7
 enableEmoji = true
+disableThemeSwitcher = true
+hidesidebar = true
+reversepagetitle = true
+disableTitleCapitalization = true
+disableArchiveTitleStyling  = true
+localizedDates = true
+singleDateFormat = "2 de Enero de 2006"
+indexDateFormat = "2 de Enero de 2006"
 
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://x.com/tu-usuario"
+
+[[params.socialIcons]]
+icon = "fab fa-instagram"
+title = "Twitter"
+url = "https://instagram.com/tu-usuario"
 
 [menu]
   [[menu.main]]
@@ -30,7 +48,7 @@ enableEmoji = true
   url = "/post/"
 
   [[menu.main]]
-  name = "Acerca"
+  name = "Colabora"
   weight = 300
   identifier = "about"
   url = "/about/"

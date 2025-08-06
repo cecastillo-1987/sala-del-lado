@@ -1,0 +1,17 @@
+/* Evitar mayúsculas en los ítems del menú */
+.nav__list-item {
+    text-transform: none !important;
+}
+
+/* Evitar mayúsculas en el título del blog en la barra lateral */
+.sidebar__introduction-title {
+    text-transform: none !important;
+}
+
+/* Reducir tamaño de íconos sociales en la barra lateral */
+.sidebar__list-item a i {
+    font-size: 30px !important;
+    /* Opcional: Sobrescribir fa-2x */
+    width: 30px !important;
+    height: 30px !important;
+}

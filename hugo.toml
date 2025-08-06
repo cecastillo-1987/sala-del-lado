@@ -1,6 +1,6 @@
 baseURL = "https://cecastillo-1987.github.io/sala-del-lado/"
 languageCode = "es"
-title = "Sala del Lado"
+title = "La sala del Lado"
 theme = "anatole"
 summarylength = 20
 publishDir = "docs"

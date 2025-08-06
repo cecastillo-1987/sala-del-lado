@@ -120,7 +120,7 @@ a:hover,
     .theme--light .navbar-burger__line {
         background-color: #202620 !important;
     }
-    .theme--dark .navbar-burger__line {
+    .theme--dark .navbar-burger .navbar-burger__line {
         background-color: #E3F2E4 !important;
     }
 }
@@ -196,7 +196,7 @@ html.theme--dark body.body {
 }
 
 /* ------------------------------------------- */
-/* --- 4. Solución para las barras blancas y el switch de tema --- */
+/* --- 4. Solución para las barras blancas y el switch de tema con espaciado --- */
 /* ------------------------------------------- */
 
 /* Eliminar fondos o bordes no deseados en nav__list */
@@ -211,10 +211,12 @@ html.theme--dark body.body {
     border: none !important;
 }
 
-/* Asegurarse de que los ítems de la lista no tengan bordes o fondos */
+/* Asegurarse de que los ítems de la lista no tengan bordes o fondos, pero añadir espaciado */
 .nav__list-item {
     border: none !important;
     background: transparent !important;
+    margin-right: 15px !important; /* Espaciado entre ítems */
+    padding: 5px 10px !important; /* Padding interno para cada ítem */
 }
 
 /* Asegurarse de que el switch de tema sea visible */
@@ -238,13 +240,8 @@ html.theme--dark body.body {
     font-size: 1.2em;
 }
 
-/* Eliminar márgenes o paddings extra que puedan causar desajustes */
-.nav__list, .nav__list--end, .nav__list-item {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Ajustar el ancho de nav__list--end para coincidir con nav__list */
+/* Ajustar el ancho de nav__list--end para que sea flexible */
 .nav__list--end {
-    width: 72px !important; /* Cambiar a 72px para coincidir con nav__list */
+    width: auto !important; /* Eliminar ancho fijo para mejor ajuste */
+    margin-left: 15px !important; /* Espaciado desde los ítems principales */
 }

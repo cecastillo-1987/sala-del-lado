@@ -39,16 +39,6 @@ body {
     text-transform: none !important;
 }
 
-/* Reducir tamaño de íconos sociales en la barra lateral */
-.sidebar__list-item a i {
-    font-size: 20px !important;
-}
-
-/* Ajuste específico para Instagram */
-.sidebar__list-item a i.fa-instagram {
-    font-size: 18px !important;
-}
-
 /* ------------------------------------------- */
 /* --- 3. Ajustes de Colores --- */
 /* ------------------------------------------- */
@@ -196,7 +186,6 @@ a:hover,
 }
 
 /* reglas más fuertes para tema */
-
 html.theme--light body.body {
     background-color: #EEF3ED !important;
     color: #202620 !important;
@@ -206,29 +195,56 @@ html.theme--dark body.body {
     color: #E3F2E4 !important;
 }
 
-/* copilo */ 
+/* ------------------------------------------- */
+/* --- 4. Solución para las barras blancas y el switch de tema --- */
+/* ------------------------------------------- */
 
+/* Eliminar fondos o bordes no deseados en nav__list */
+.nav__list {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Eliminar fondos o bordes no deseados en nav__list--end */
+.nav__list--end {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Asegurarse de que los ítems de la lista no tengan bordes o fondos */
+.nav__list-item {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Asegurarse de que el switch de tema sea visible */
 .themeswitch {
     display: block !important;
-    opacity: 1 !important;
     visibility: visible !important;
 }
 
-.themeswitch a, .themeswitch i {
-    color: #244023 !important;
-    background: #EEF3ED !important;
-    cursor: pointer !important;
+/* Ajustar el color del enlace en el switch para tema claro */
+.theme--light .themeswitch a {
+    color: #202620 !important; /* Color visible en tema claro */
 }
 
-.theme--dark .themeswitch a, .theme--dark .themeswitch i {
-    color: #EEF3ED !important;
-    background: #244023 !important;
+/* Ajustar el color del enlace en el switch para tema oscuro */
+.theme--dark .themeswitch a {
+    color: #E3F2E4 !important; /* Color visible en tema oscuro */
 }
 
-.header .navbar-burger .navbar-burger__line {
-    background-color: #202620 !important;
-}
-.theme--dark .header .navbar-burger .navbar-burger__line {
-    background-color: #E3F2E4 !important;
+/* Asegurarse de que el ícono del switch sea visible y tenga tamaño adecuado */
+.themeswitch a i {
+    font-size: 1.2em;
 }
 
+/* Eliminar márgenes o paddings extra que puedan causar desajustes */
+.nav__list, .nav__list--end, .nav__list-item {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ajustar el ancho de nav__list--end para coincidir con nav__list */
+.nav__list--end {
+    width: 72px !important; /* Cambiar a 72px para coincidir con nav__list */
+}

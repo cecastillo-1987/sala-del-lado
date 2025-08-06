@@ -25,7 +25,6 @@ body {
     font-family: 'Lato', sans-serif !important;
 }
 
-
 /* ------------------------------------------- */
 /* --- 2. Ajustes y Overrides anteriores --- */
 /* ------------------------------------------- */
@@ -42,8 +41,11 @@ body {
 
 /* Reducir tamaño de íconos sociales en la barra lateral */
 .sidebar__list-item a i {
-    font-size: 30px !important;
-    /* Opcional: Sobrescribir fa-2x */
-    width: 30px !important;
-    height: 30px !important;
+    font-size: 20px !important; /* Reducido de 30px a 20px para probar */
+    /* Eliminamos width y height para evitar distorsiones */
+}
+
+/* Opcional: Ajuste específico para Instagram */
+.sidebar__list-item a i.fa-instagram {
+    font-size: 18px !important; /* Opcional, ajusta según prefieras */
 }

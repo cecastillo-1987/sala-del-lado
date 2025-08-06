@@ -1,14 +1,10 @@
-/* Custom CSS para el tema Anatole */
+/* Custom CSS condensado para el tema Anatole */
 
-/* ------------------------------------------- */
-/* --- 1. Importación y Aplicación de Fuentes --- */
-/* ------------------------------------------- */
-
-/* Importar las fuentes de Google Fonts */
+/* --- Importación de fuentes --- */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+EAN13+Text&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* Aplicación de las fuentes */
+/* --- Aplicación de fuentes --- */
 .post__content h1,
 .post__content h2,
 .post__content h3,
@@ -20,40 +16,29 @@
 .sidebar__introduction-title h1 {
     font-family: 'Playfair Display', serif !important;
 }
-
 body {
     font-family: 'Lato', sans-serif !important;
 }
 
-/* ------------------------------------------- */
-/* --- 2. Ajustes y Overrides anteriores --- */
-/* ------------------------------------------- */
-
-/* Evitar mayúsculas en los ítems del menú */
-.nav__list-item {
-    text-transform: none !important;
-}
-
-/* Evitar mayúsculas en el título del blog en la barra lateral */
+/* --- Ajustes de texto --- */
+.nav__list-item,
 .sidebar__introduction-title {
     text-transform: none !important;
 }
 
-/* ------------------------------------------- */
-/* --- 3. Ajustes de Colores --- */
-/* ------------------------------------------- */
-
-/* Fondo del cuerpo */
+/* --- Fondo y color principal por tema --- */
+html.theme--light body.body,
 .theme--light .body {
     background-color: #EEF3ED !important;
     color: #202620 !important;
 }
+html.theme--dark body.body,
 .theme--dark .body {
     background-color: #244023 !important;
     color: #E3F2E4 !important;
 }
 
-/* Fondos de elementos secundarios */
+/* --- Fondos de elementos secundarios --- */
 .theme--light .nav__list,
 .theme--light .post,
 .theme--light .sidebar {
@@ -65,7 +50,7 @@ body {
     background-color: #244023 !important;
 }
 
-/* Bordes y separadores */
+/* --- Bordes y separadores --- */
 .theme--light .nav__link--active,
 .theme--light .post__footer {
     border-bottom-color: #eee !important;
@@ -75,14 +60,14 @@ body {
     border-bottom-color: #464646 !important;
 }
 
-/* Enlaces y acentos */
+/* --- Enlaces y acentos --- */
 a:hover,
 .category,
 .tag {
     color: #BCBF54 !important;
 }
 
-/* Elementos destacados (alertas, botones) */
+/* --- Elementos destacados (alertas, botones) --- */
 .alert,
 .portfolio__button {
     border-color: #395873 !important;
@@ -92,7 +77,7 @@ a:hover,
     background-color: #395873 !important;
 }
 
-/* Corrección de color de texto para título del blog y menú */
+/* --- Corrección de color de texto para títulos y menú --- */
 .theme--light .sidebar__introduction-title a,
 .theme--light .sidebar__introduction-title h1,
 .theme--light .nav__list-item a {
@@ -104,144 +89,46 @@ a:hover,
     color: #E3F2E4 !important;
 }
 
-/* Ajuste de color para el botón hamburguesa (forzado) */
-.theme--light .navbar-burger .navbar-burger__line {
-    background-color: #202620 !important;
-}
-.theme--dark .navbar-burger .navbar-burger__line {
-    background-color: #E3F2E4 !important;
-}
-
-/* Forzar color de hamburguesa en todas las condiciones (zoom y animaciones) */
-.navbar-burger__line {
-    background-color: #202620 !important;
-}
-@media all and (min-resolution: 0.001dpcm) {
-    .theme--light .navbar-burger__line {
-        background-color: #202620 !important;
-    }
-    .theme--dark .navbar-burger .navbar-burger__line {
-        background-color: #E3F2E4 !important;
-    }
-}
-
-/* Desactivar animaciones de transición de página */
-.nav,
-.body {
-    animation: none !important;
-    transition: none !important;
-}
-
-/* Nueva regla para mayor especificidad */
-.header .navbar-burger .navbar-burger__line {
-    background-color: #202620 !important;
-}
-@media (prefers-reduced-motion: no-preference) {
-    .theme--light .header .navbar-burger .navbar-burger__line {
-        background-color: #202620 !important;
-    }
-    .theme--dark .header .navbar-burger .navbar-burger__line {
-        background-color: #E3F2E4 !important;
-    }
-}
-
-/* --- Botón de cambio de tema --- */
+/* --- Botón de cambio de tema (themeswitch) --- */
 .themeswitch {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
-
-.themeswitch a, .themeswitch i {
-    color: #244023 !important;         /* Color para modo claro */
-    background: #EEF3ED !important;    /* Fondo para modo claro, si quieres */
+.themeswitch a,
+.themeswitch i {
+    color: #244023 !important;
+    background: #EEF3ED !important;
     border: none !important;
     cursor: pointer !important;
 }
-
-/* Colores para modo oscuro */
-.theme--dark .themeswitch a, .theme--dark .themeswitch i {
+.theme--dark .themeswitch a,
+.theme--dark .themeswitch i {
     color: #EEF3ED !important;
     background: #244023 !important;
 }
-
-/* --- Menú hamburguesa --- */
-.theme--light .navbar-burger {
-    background-color: #EEF3ED !important;
-}
-.theme--dark .navbar-burger {
-    background-color: #244023 !important;
-}
-.header .navbar-burger {
-    background-color: #EEF3ED !important;
-}
-.theme--dark .header .navbar-burger {
-    background-color: #244023 !important;
-}
-.navbar-burger__line {
-    background-color: #244023 !important; /* Líneas en modo claro */
-}
-.theme--dark .navbar-burger__line {
-    background-color: #EEF3ED !important; /* Líneas en modo oscuro */
-}
-
-/* reglas más fuertes para tema */
-html.theme--light body.body {
-    background-color: #EEF3ED !important;
+.theme--light .themeswitch a {
     color: #202620 !important;
 }
-html.theme--dark body.body {
-    background-color: #244023 !important;
+.theme--dark .themeswitch a {
     color: #E3F2E4 !important;
 }
-
-/* ------------------------------------------- */
-/* --- 4. Solución para las barras blancas y el switch de tema con espaciado --- */
-/* ------------------------------------------- */
-
-/* Eliminar fondos o bordes no deseados en nav__list */
-.nav__list {
-    background: transparent !important;
-    border: none !important;
-}
-
-/* Eliminar fondos o bordes no deseados en nav__list--end */
-.nav__list--end {
-    background: transparent !important;
-    border: none !important;
-}
-
-/* Asegurarse de que los ítems de la lista no tengan bordes o fondos, pero añadir espaciado */
-.nav__list-item {
-    border: none !important;
-    background: transparent !important;
-    margin-right: 15px !important; /* Espaciado entre ítems */
-    padding: 5px 10px !important; /* Padding interno para cada ítem */
-}
-
-/* Asegurarse de que el switch de tema sea visible */
-.themeswitch {
-    display: block !important;
-    visibility: visible !important;
-}
-
-/* Ajustar el color del enlace en el switch para tema claro */
-.theme--light .themeswitch a {
-    color: #202620 !important; /* Color visible en tema claro */
-}
-
-/* Ajustar el color del enlace en el switch para tema oscuro */
-.theme--dark .themeswitch a {
-    color: #E3F2E4 !important; /* Color visible en tema oscuro */
-}
-
-/* Asegurarse de que el ícono del switch sea visible y tenga tamaño adecuado */
 .themeswitch a i {
     font-size: 1.2em;
 }
 
-/* Ajustar el ancho de nav__list--end para que sea flexible */
+/* --- Ajustes de nav__list-item --- */
+.nav__list-item {
+    border: none !important;
+    background: transparent !important;
+    margin-right: 15px !important;
+    padding: 5px 10px !important;
+}
+
+/* --- Ajustes de nav__list--end --- */
 .nav__list--end {
-    width: auto !important; /* Eliminar ancho fijo para mejor ajuste */
-    margin-left: 15px !important; /* Espaciado desde los ítems principales */
+    width: auto !important;
+    margin-left: 15px !important;
+    background: transparent !important;
+    border: none !important;
 }

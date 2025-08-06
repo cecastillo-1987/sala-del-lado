@@ -6,7 +6,7 @@ summarylength = 20
 publishDir = "docs"
 
 [params]
-customCss = ["css/custom.css"]
+customCss = ["css/custom-original.css"]
 title = "La sala del lado"
 author = "La sala del lado"
 description = "Blog de escrituras cinefilas."

@@ -3,8 +3,7 @@ languageCode = "es"
 title = "La sala del Lado"
 theme = "anatole"
 summarylength = 20
-publishDir = "public"
-
+publishDir = "docs"
 
 [params]
 customCss = ["css/custom.css"]
@@ -17,6 +16,7 @@ mainSections = ["posts"]
 contentratio = 0.7
 enableEmoji = true
 displayMode = "dark"
+disableThemeSwitcher = false
 hidesidebar = false
 reversepagetitle = true
 disableTitleCapitalization = true
@@ -25,6 +25,7 @@ localizedDates = true
 singleDateFormat = "2 de Enero de 2006"
 indexDateFormat = "2 de Enero de 2006"
 doNotLoadAnimations = true
+copyright = "2025-{{ YEAR }}"
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
@@ -56,4 +57,4 @@ url = "https://instagram.com/tu-usuario"
   url = "/about/"
 
 
-  copyright = "2025-{{ YEAR }}"
+ 

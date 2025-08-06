@@ -194,3 +194,15 @@ a:hover,
 .theme--dark .navbar-burger__line {
     background-color: #EEF3ED !important; /* Líneas en modo oscuro */
 }
+
+/* reglas más fuertes para tema */
+
+html.theme--light body.body {
+    background-color: #EEF3ED !important;
+    color: #202620 !important;
+}
+html.theme--dark body.body {
+    background-color: #244023 !important;
+    color: #E3F2E4 !important;
+}
+

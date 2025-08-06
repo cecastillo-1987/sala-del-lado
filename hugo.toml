@@ -16,7 +16,6 @@ mainSections = ["posts"]
 contentratio = 0.7
 enableEmoji = true
 displayMode = "dark"
-disableThemeSwitcher = false
 hidesidebar = false
 reversepagetitle = true
 disableTitleCapitalization = true

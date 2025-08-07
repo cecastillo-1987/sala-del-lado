@@ -1,10 +1,14 @@
-/* Custom CSS condensado para el tema Anatole */
+/* Custom CSS para el tema Anatole */
 
-/* --- Importación de fuentes --- */
+/* ------------------------------------------- */
+/* --- 1. Importación y Aplicación de Fuentes --- */
+/* ------------------------------------------- */
+
+/* Importar las fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+EAN13+Text&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* --- Aplicación de fuentes --- */
+/* Aplicación de las fuentes */
 .post__content h1,
 .post__content h2,
 .post__content h3,
@@ -16,119 +20,31 @@
 .sidebar__introduction-title h1 {
     font-family: 'Playfair Display', serif !important;
 }
+
 body {
     font-family: 'Lato', sans-serif !important;
 }
 
-/* --- Ajustes de texto --- */
-.nav__list-item,
+/* ------------------------------------------- */
+/* --- 2. Ajustes y Overrides anteriores --- */
+/* ------------------------------------------- */
+
+/* Evitar mayúsculas en los ítems del menú */
+.nav__list-item {
+    text-transform: none !important;
+}
+
+/* Evitar mayúsculas en el título del blog en la barra lateral */
 .sidebar__introduction-title {
     text-transform: none !important;
 }
 
-/* --- Fondo y color principal por tema --- */
-html.theme--light body.body,
-.theme--light .body {
-    background-color: #EEF3ED !important;
-    color: #202620 !important;
-}
-html.theme--dark body.body,
-.theme--dark .body {
-    background-color: #244023 !important;
-    color: #E3F2E4 !important;
+/* Reducir tamaño de íconos sociales en la barra lateral */
+.sidebar__list-item a i {
+    font-size: 20px !important;
 }
 
-/* --- Fondos de elementos secundarios --- */
-.theme--light .nav__list,
-.theme--light .post,
-.theme--light .sidebar {
-    background-color: #EEF3ED !important;
-}
-.theme--dark .nav__list,
-.theme--dark .post,
-.theme--dark .sidebar {
-    background-color: #244023 !important;
-}
-
-/* --- Bordes y separadores --- */
-.theme--light .nav__link--active,
-.theme--light .post__footer {
-    border-bottom-color: #eee !important;
-}
-.theme--dark .nav__link--active,
-.theme--dark .post__footer {
-    border-bottom-color: #464646 !important;
-}
-
-/* --- Enlaces y acentos --- */
-a:hover,
-.category,
-.tag {
-    color: #BCBF54 !important;
-}
-
-/* --- Elementos destacados (alertas, botones) --- */
-.alert,
-.portfolio__button {
-    border-color: #395873 !important;
-}
-.theme--light .alert__indicator,
-.theme--dark .alert__indicator {
-    background-color: #395873 !important;
-}
-
-/* --- Corrección de color de texto para títulos y menú --- */
-.theme--light .sidebar__introduction-title a,
-.theme--light .sidebar__introduction-title h1,
-.theme--light .nav__list-item a {
-    color: #202620 !important;
-}
-.theme--dark .sidebar__introduction-title a,
-.theme--dark .sidebar__introduction-title h1,
-.theme--dark .nav__list-item a {
-    color: #E3F2E4 !important;
-}
-
-/* --- Botón de cambio de tema (themeswitch) --- */
-.themeswitch {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-.themeswitch a,
-.themeswitch i {
-    color: #244023 !important;
-    background: #EEF3ED !important;
-    border: none !important;
-    cursor: pointer !important;
-}
-.theme--dark .themeswitch a,
-.theme--dark .themeswitch i {
-    color: #EEF3ED !important;
-    background: #244023 !important;
-}
-.theme--light .themeswitch a {
-    color: #202620 !important;
-}
-.theme--dark .themeswitch a {
-    color: #E3F2E4 !important;
-}
-.themeswitch a i {
-    font-size: 1.2em;
-}
-
-/* --- Ajustes de nav__list-item --- */
-.nav__list-item {
-    border: none !important;
-    background: transparent !important;
-    margin-right: 15px !important;
-    padding: 5px 10px !important;
-}
-
-/* --- Ajustes de nav__list--end --- */
-.nav__list--end {
-    width: auto !important;
-    margin-left: 15px !important;
-    background: transparent !important;
-    border: none !important;
+/* Ajuste específico para Instagram */
+.sidebar__list-item a i.fa-instagram {
+    font-size: 18px !important;
 }
